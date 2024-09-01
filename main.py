@@ -1,6 +1,7 @@
 from typing import List
 
 def insertionSortDescending(data: List[int]) -> List[int]:
+    # Iterating from the second element
     for i in range(1, len(data)):
         element = data[i]
         
@@ -10,6 +11,7 @@ def insertionSortDescending(data: List[int]) -> List[int]:
             j -= 1
         data[j + 1] = element
 
+    # Returning the sorted list in descending order
     return data
 
 data  = [99, 57, 77, 47, 83, 1, 24, 19]
